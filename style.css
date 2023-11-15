@@ -1,10 +1,20 @@
 body {
 	font-family: sans-serif;
-	background-color: green;
+	background-color: rgba(16, 77, 157, 0.849);
 	background-size: cover;
 	text-align: center;
 	color: white;
 	font-weight: bold;
+	margin: 0; /* Remove default margin */
+	padding: 0; /* Remove default padding */
+}
+
+.main-container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+    max-width: 600px; /* Set a maximum width for the main container */
+    margin: 0 auto; /* Center the container horizontally */
 }
 
 h1 {
@@ -17,19 +27,23 @@ h1 {
 
 button {
 	color: #016f32;
-	margin: auto;
-	width: 150px;
+	margin: 10px auto; /* Add some margin for spacing */
+	width: 80%; /* Use a percentage for width */
+	max-width: 200px; /* Set a maximum width */
 	background-color: goldenrod;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding: 10px; /* Adjust padding for better touch interaction */
 	font-weight: bold;
 	border-radius: 2px; 
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    font-size: 14px; /* Adjust font size for smaller screens */
-  }
+/* Add media query for smaller screens if needed */
+@media (max-width: 600px) {
+    /* Add additional styling for smaller screens if needed */
+	h1 {
+		font-size: 300px;
+	}
+	
+}
 
   button {
     width: 100%; /* Full width for small screens */
